@@ -1,0 +1,22 @@
+{
+  "name": "microfilm",
+  "homepage": "https://github.com/alexhernandez/microfilm",
+  "authors": [
+    "Alex Hernandez <oorangecchicken@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "vue": "^2.1.3",
+    "jquery": "^3.1.1",
+    "normalize-css": "^5.0.0"
+  }
+}

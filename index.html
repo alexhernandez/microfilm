@@ -2,9 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Instagram</title>
+  <title>MicroFilm</title>
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
   <style>
+    body {
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    }
+    h1 {
+      font-weight: 100;
+      font-size: 60px;
+      line-height: 1;
+    }
     pre {font-size: 12px; }
     .blendmode {padding: 20px; }
     .normal { background-blend-mode: normal; }
@@ -23,12 +31,16 @@
     .red{background-color: red}
     .green{background-color: green}
      .blue{background-color: blue}
+     small {
+      font-size: 45%;
+      color: #ccc;
+     }
   </style>
 </head>
 <body>
-<div id="app">
+<div id="app" style="text-align:center;">
+  <h1>MicroFilm<div><small>Image Editing w/ CSS Filters &amp; Blend Modes</small></div></h1>
   <div class="blendmode">
-    <h1>Exploring CSS Filters &amp; Blend Modes</h1>
     <select name="blendMode" id="blendMode" v-model="blendMode">
       <option value="">-- Blend Mode --</option>
       <option value="normal">Normal</option>
@@ -52,7 +64,7 @@
       <option value="green">Green</option>
       <option value="blue">Blue</option>
     </select>
-    <br><br>
+    <br><br><br>
     <div>
       <div>
         <label for="blur">Blur</label>
@@ -95,7 +107,9 @@
     <img :class="[blendMode, backgroundColor]" :style="filters" style="width: 300px; height: 300px; background-size: 300px 300px; background-image: url(imgs/tahoe.jpg)" alt="">
     <img :class="[blendMode, backgroundColor]" :style="filters" style="width: 300px; height: 300px; background-size: 300px 300px; box-sizing: border-box; border: 1px #ccc solid; background-image: url(imgs/white.png)" alt="">
   </div>
-  <pre><code>{{ $data }}</code></pre>
+  <br><br><br>
+  <p>Refresh Page to Reset ;P</p>
+  <br><br><br>
 </div>
 
 <script src="https://unpkg.com/vue/dist/vue.js"></script>

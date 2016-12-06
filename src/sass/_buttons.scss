@@ -1,0 +1,25 @@
+// BUTTONS
+//
+
+%btn {
+  display: inline-block;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: none;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
+  background-image: none;
+}
+
+// COLOR MODIFIERS
+.btn--success, .btn--warning, .btn--danger {
+  @extend %btn;
+}
+
+.btn--success {  background-color: $success; }
+.btn--warning { background-color: $warning; }
+.btn--danger { background-color: $danger; }

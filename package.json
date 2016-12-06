@@ -1,0 +1,15 @@
+{
+  "name": "microfilm",
+  "version": "0.0.1",
+  "description": "Image Editing w/ CSS Filters &amp; Blend Modes",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "laravel-elixir": "^6.0.0-15",
+    "laravel-elixir-scss-lint": "^1.3.1",
+    "laravel-elixir-vue-2": "^0.3.0",
+    "laravel-elixir-webpack-official": "^1.0.10"
+  },
+  "dependencies": {
+    "vue": "^2.1.4"
+  }
+}

@@ -1,0 +1,51 @@
+// TYPOGRAPHY
+//
+
+// BASE
+html { font-size: $font-size-root; }
+
+body {
+  @include font-smoothing();
+  font-family: $font-base;
+  font-size: modular-scale(0);
+  line-height: 1.5;
+}
+
+// HEADERS
+h1,h2,h3,h4,h5,h6 {
+  margin-bottom: modular-scale(-1);
+  font-family: $font-brand;
+  font-weight: 100;
+  line-height: 1.2;
+
+  small,
+  .milli {
+    font-size: 60%;
+    font-weight: normal;
+    color: rgba(#4a4a4a, .6);
+  }
+}
+
+h1 { font-size: modular-scale(5); }
+h2 { font-size: modular-scale(4); }
+h3 { font-size: modular-scale(3); }
+h4 { font-size: modular-scale(2); }
+h5 { font-size: modular-scale(1); }
+h6 { font-size: modular-scale(0); }
+
+// LARGE TYPE
+.giga { font-size: modular-scale(8); }
+.mega { font-size: modular-scale(7); }
+.kilo { font-size: modular-scale(6); }
+
+// SMALL TYPE
+small,
+.milli { font-size: modular-scale(-1); }
+.micro { font-size: modular-scale(-2); }
+
+// GENERAL
+p, ul, ol, pre, code {
+  margin-bottom: modular-scale(1);
+  font-size: modular-scale(0);
+  color: inherit;
+}

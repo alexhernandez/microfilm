@@ -1,0 +1,26 @@
+// HELPERS
+//
+
+.cf { @include clearfix(); }
+
+.blendmode {padding: 20px; }
+
+.text--center { text-align: center; }
+
+.normal { background-blend-mode: normal; }
+.multiply { background-blend-mode: multiply; }
+.screen { background-blend-mode: screen; }
+.overlay { background-blend-mode: overlay; }
+.darken { background-blend-mode: darken; }
+.lighten { background-blend-mode: lighten; }
+.color-dodge { background-blend-mode: color-dodge; }
+.saturation { background-blend-mode: saturation; }
+.color { background-blend-mode: color; }
+.luminosity { background-blend-mode: luminosity; }
+
+.white { background-color: #fff; }
+.black { background-color: #000; }
+.gray { background-color: #808080; }
+.red { background-color: #f00; }
+.green { background-color: #0f0; }
+.blue { background-color: #00f; }
